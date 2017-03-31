@@ -68,7 +68,8 @@ namespace ThreadedTopShelfService
                 Console.WriteLine("doing work..");
                 if (_semaphoreToRequestStop.Wait(500))
                 {
-                    Console.WriteLine("Stopped");
+                    Console.WriteLine("Stopped"); 
+
                     break;
                 }
             }
