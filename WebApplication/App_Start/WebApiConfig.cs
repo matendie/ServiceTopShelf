@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Web.Http;
+﻿using Microsoft.Owin.Hosting;
 using Microsoft.Owin.Security.OAuth;
-using Newtonsoft.Json.Serialization;
-using Topshelf;
+using System;
 using System.Diagnostics;
-using Microsoft.Owin.Hosting;
+using System.Web.Http;
+using Topshelf;
 using WebApplication.App_Start;
 
 namespace WebApplication
@@ -58,6 +54,8 @@ namespace WebApplication
         {
             Trace.WriteLine("Starting ConsumerStateService");
             _webApplication = WebApp.Start<OwinConfiguration>("http://localhost:5001");
+
+            
             return true;
         }
 

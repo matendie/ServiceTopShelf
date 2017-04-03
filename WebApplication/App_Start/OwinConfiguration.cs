@@ -1,4 +1,5 @@
-﻿using Owin;
+﻿using NSwag.AspNet.Owin;
+using Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace WebApplication.App_Start
         public void Configuration(IAppBuilder app)
         {
             app.UseWebApi(WebApiConfig.Register());
+
+            var swagSettings = new SwaggerUiOwinSettings();
+            swagSettings.DefaultPropertyNameHandling = NJsonSchema.PropertyNameHandling.Default;
+            app.UseSwaggerUi(typeof(Startup).Assembly, swagSettings);
+
         }
     }
 }
