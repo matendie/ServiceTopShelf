@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServiceApp", "TestServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadedTopShelfService", "ThreadedTopShelfService\ThreadedTopShelfService.csproj", "{42225E72-2444-4345-A18E-AEA62E9CE09A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{B8925AC3-A971-42CD-9760-42AA5D1EE457}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{42225E72-2444-4345-A18E-AEA62E9CE09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42225E72-2444-4345-A18E-AEA62E9CE09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42225E72-2444-4345-A18E-AEA62E9CE09A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8925AC3-A971-42CD-9760-42AA5D1EE457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8925AC3-A971-42CD-9760-42AA5D1EE457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8925AC3-A971-42CD-9760-42AA5D1EE457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8925AC3-A971-42CD-9760-42AA5D1EE457}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
